@@ -1,0 +1,151 @@
+
+.bannerWhite {
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
+}
+
+.logo {
+  width: 100px;
+}
+
+.navBlock {
+  min-width: 80%;
+  display: flex;
+  justify-content: center;
+
+  & ul {
+    display: flex;
+    list-style: none;
+  }
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+}
+
+.navItem a {
+  text-decoration: none;
+  padding-right: 2em;
+  padding-left: 2em;
+  color: $blue;
+  font-family: Lato;
+  font-size: 20px;
+  text-align: center;
+}
+
+.navItem :hover {
+  color: $blueFresh;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.userName {
+  font-weight: bold;
+}
+
+.ConnectBtn {
+  max-width: 150px;
+  max-height: 40px;
+  background-color: $blue;
+  border-radius: 5px;
+  padding: 10px;
+  color: whitesmoke;
+  font-size: 1em;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.DeconnectBtn {
+  max-width: 150px;
+  max-height: 40px;
+  background-color: $blue;
+  border-radius: 5px;
+  padding: 10px;
+  color: whitesmoke;
+  font-size: 1em;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.fas{
+  display: none!important;
+}
+.none {
+  display: none;
+}
+
+.menuMob {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  color: whitesmoke;
+  background-color: #293563;
+  z-index: 100;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 500ms;
+}
+
+.menuMob a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 930px) {
+
+  .noneMobile {
+    display: none;
+  }
+  .fas{
+    display: inline-block!important;
+  }
+  .blockMobile {
+    display: block;
+  }
+  .menuLogo {
+    font-size: 40px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .closeMobileMenu {
+    font-size: 35px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .itemMenuMob {
+    font-size: 30px;
+    padding: 10px;
+    margin: 4px;
+    border-top: 1px solid white;
+  }
+
+  .user {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  & a {
+    padding: 10px;
+  }
+
+  .eventBlock a{
+    padding: 0;
+  }
+}
+

@@ -1,0 +1,41 @@
+
+.footContainer{
+  width: 100%;
+  background-color: $blue;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.footItem{
+  padding: 10px;
+  margin: 10px;
+}
+
+.notice{
+  color: $blue;
+  text-decoration: none;
+}
+
+.footLogo{
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+}
+
+.footLogo img{
+  max-width: 150px;
+  margin: 10px;
+}
+
+.footLogo h3{
+  color: $blue;
+}
+
+.link{
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}

@@ -1,0 +1,12 @@
+<?php
+if(!isset($_SESSION['user'])){
+    require('models/connexion.php');
+    if(isset($_POST['connexion'])){
+        $errorLog=connect($_POST['connexion']);
+    }
+    require('views/connexion.php');
+}
+else{
+    header('location:index.php');
+    exit;
+}

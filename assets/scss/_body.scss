@@ -1,0 +1,343 @@
+@import "var";
+
+body {
+  background-color: lightgray;
+  font-family: Roboto, sans-serif;
+}
+
+.mainContainer {
+  width: 80%;
+  background-color: whitesmoke;
+  margin: 20px auto;
+  padding: 12px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexDirect {
+  flex-direction: column;
+}
+
+.direction-row {
+  flex-direction: row;
+}
+
+.justifyCont {
+  justify-content: center;
+}
+
+.align {
+  align-items: center;
+}
+
+.item-flex-start {
+  align-self: flex-start;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.spaceB {
+  justify-content: space-evenly;
+}
+
+.responsiveImg {
+  width: 100%;
+  height: auto;
+}
+
+.centerVerticaly {
+  align-items: center;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.mainContainer h1, h2 {
+  color: $blue;
+  padding-bottom: 20px;
+}
+
+.containerForm {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.containerForm ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & li {
+    margin: 10px;
+  }
+}
+
+.containerForm input,
+textarea {
+  padding: .3em;
+  margin: 20px 0;
+  border: 1px solid $blue;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: inherit;
+  background: rgba(0, 0, 0, .02);
+}
+
+.containerForm input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.inputForm {
+  width: 100%;
+}
+
+.textarea {
+  width: 100%;
+  height: 10em;
+  resize: none;
+}
+
+.service {
+  max-width: 250px;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.serviceName {
+  background-color: $blue;
+  color: white;
+  width: 100%;
+  padding: 5px;
+}
+
+.service img {
+  width: 100%;
+  height: 200px;
+}
+
+.imgContent {
+  max-width: 400px;
+  max-height: 300px;
+  padding: 10px;
+}
+
+.txtContent {
+  line-height: 1.8;
+}
+
+.bgcBlue {
+  background-color: $blue;
+  color: white;
+}
+
+.bgcBluefresh {
+  background-color: $blueFresh;
+  color: white;
+}
+
+.info {
+  margin: 5px 10px 5px 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+
+  & p {
+    font-weight: bold;
+  }
+
+  & label {
+    margin-right: 1em;
+  }
+
+}
+
+.blockTitle {
+  margin: 0 0 10px;
+  padding: 10px;
+}
+
+.choice {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btnForm {
+  max-width: 150px;
+  max-height: 40px;
+  background-color: $blue;
+  border-radius: 5px;
+  padding: 10px;
+  color: whitesmoke;
+  font-size: 1em;
+  margin: 20px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: $blueFresh;
+  color: white;
+}
+
+.userInfo {
+  width: 50%;
+}
+
+.information {
+  display: flex;
+  padding: 10px;
+
+  & p {
+    font-weight: bold;
+  }
+
+  & label {
+    margin-right: 1em;
+  }
+}
+
+.charge {
+  width: 80%;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cell {
+  width: 20%;
+  height: 50%;
+  margin: 5px;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.cellName {
+  display: flex;
+  justify-content: center;
+}
+
+.cellContent {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.collapsible {
+  background-color: lighten($blueFresh, 20%);
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: lighten($blueFresh, 5%);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.faqResponse {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+#map {
+  min-height: 400px;
+  width: 100vw;
+}
+
+.mySlides {
+  display: none;
+}
+
+.w3-content {
+  max-width: 600px;
+}
+
+.datePiker {
+  padding: 20px;
+}
+
+.eventBlock {
+  width: 100%;
+}
+
+.eventBlock img {
+  width: 100%;
+  height: 200px;
+}
+
+.eventName {
+  color: $blue;
+  padding: 5px;
+  background-color: $blueFresh;
+  margin-bottom: 20px;
+}
+
+.eventInfo {
+  text-decoration: none;
+}
+
+.eventImg {
+  width: 50%;
+  height: 400px;
+}
+
+.eventContent {
+  padding-bottom: 20px;
+}
+
+.name {
+  width: 20%;
+}
+
+.nameImg {
+  width: 100%;
+  height: 100px;
+  margin: 20px;
+}
+
+.imgGallery {
+  width: 100%;
+}
+
+@media screen and (max-width: 930px) {
+
+  .video iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
